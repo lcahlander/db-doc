@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<div class="panel panel-default">
+    <div class="panel-body">
+        <div data-template="db-template:each" data-template-from="db-children" data-template-to="db">
+            <div data-template="db-template:db-type">
+                <div data-template="db-template:model-value-switch" data-template-key="db-type" data-template-list="title,subtitle,section,para,table">
+                    <h2 data-template="db-template:model-value-text" data-template-key="db"/>
+                    <h3 data-template="db-template:model-value-text" data-template-key="db"/>
+                    <div data-template="templates:include" data-template-path="templates/docbook/section.html"/>
+                    <p data-template="db-template:model-value-text" data-template-key="db"/>
+                    <div data-template="templates:include" data-template-path="templates/docbook/table.html"/>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

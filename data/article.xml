@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://docbook.org/xml/5.0/rng/docbookxi.rng" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="http://docbook.org/xml/5.0/rng/docbook.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<article xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" version="5.0">
+    <info>
+        <title>Article Template Title</title>
+        <author>
+            <orgname>Organization Name</orgname>
+            <address>
+                <city>City</city>
+                <street>Street</street>
+                <postcode>000000</postcode>
+                <country>Country</country>
+            </address>
+            <email>user@example.com</email>
+        </author>
+    </info>
+    <section>
+        <title>Section1 Title</title>
+        <subtitle>Section1 Subtitle</subtitle>
+        <para>Now is the time for all good men to come to the aid of their party.</para>
+        <table frame="all" rowsep="1" colsep="1">
+            <title>Hello</title>
+            <tgroup cols="2">
+                <colspec colname="c1" colnum="1" colwidth="1.0*"/>
+                <colspec colname="c2" colnum="2" colwidth="1.0*"/>
+                <thead>
+                    <row>
+                        <entry>a</entry>
+                        <entry>b</entry>
+                    </row>
+                </thead>
+                <tbody>
+                    <row>
+                        <entry>c</entry>
+                        <entry>d</entry>
+                    </row>
+                    <row>
+                        <entry>e</entry>
+                        <entry>f</entry>
+                    </row>
+                    <row>
+                        <entry>g</entry>
+                        <entry>h</entry>
+                    </row>
+                </tbody>
+            </tgroup>
+        </table>
+        <section>
+            <title>sub-section</title>
+            <para>AAA</para>
+        </section>
+    </section>
+</article>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tr>
+    <div data-template="db-template:each" data-template-from="db-children" data-template-to="db">
+        <div data-template="db-template:db-type">
+            <div data-template="templates:if-model-key-equals" data-template-key="db-type" data-template-value="th">
+                <th data-template="db-template:model-value-text" data-template-key="db"/>
+            </div>
+            <div data-template="templates:if-model-key-equals" data-template-key="db-type" data-template-value="td">
+                <td data-template="db-template:model-value-text" data-template-key="db"/>
+            </div>
+            <div data-template="templates:if-model-key-equals" data-template-key="db-type" data-template-value="entry">
+                <td data-template="db-template:model-value-text" data-template-key="db"/>
+            </div>
+        </div>
+    </div>
+</tr>

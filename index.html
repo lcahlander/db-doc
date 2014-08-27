@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<div xmlns="http://www.w3.org/1999/xhtml" data-template="templates:surround" data-template-with="templates/page.html" data-template-at="content">
+    <div data-template="db-template:docbook">
+        <div class="col-md-3">
+            <div class="panel panel-default">
+                <div class="panel-body">
+                    <ul>
+                        <li>Section1 Title</li>
+                        <ul>
+                            <li>sub-section</li>
+                        </ul>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-9">
+            <div data-template="db-template:db-type">
+                <div data-template="templates:if-model-key-equals" data-template-key="db-type" data-template-value="article">
+                    <div data-template="templates:include" data-template-path="templates/docbook/article.html"/>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
