@@ -1,16 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<div class="panel panel-default">
+<section class="panel panel-default">
     <div class="panel-body">
         <div data-template="db-template:each" data-template-from="db-children" data-template-to="db">
             <div data-template="db-template:db-type">
-                <div data-template="db-template:model-value-switch" data-template-key="db-type" data-template-list="title,subtitle,section,para,table">
+                <div data-template="db-template:model-value-switch" data-template-key="db-type" data-template-list="title,subtitle,section,para,table,programlisting,glosslist">
                     <h2 data-template="db-template:model-value-text" data-template-key="db"/>
                     <h3 data-template="db-template:model-value-text" data-template-key="db"/>
                     <div data-template="templates:include" data-template-path="templates/docbook/section.html"/>
                     <p data-template="db-template:model-value-text" data-template-key="db"/>
                     <div data-template="templates:include" data-template-path="templates/docbook/table.html"/>
+                    <div class="code" data-language="xquery">xquery version "3.0";
+for $speechBySpeaker in //SPEECH[ft:query(., "king")]
+group by $speaker := $speechBySpeaker/SPEAKER
+order by $speaker
+return
+&lt;speaker name="{$speaker}"&gt;
+{ $speechBySpeaker }
+&lt;/speaker&gt;
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
+</section>

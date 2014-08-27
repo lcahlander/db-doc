@@ -43,3 +43,11 @@ declare function db-template:each($node as node(), $model as map(*), $from as xs
     return
             templates:process($node/node(), map:new(($model, map:entry($to, $item))))
 };
+
+declare %templates:wrap function db-template:colspec($node as node(), $model as map(*)) {
+    attribute { 'width' } { "25%" }
+};
+declare %templates:wrap function db-template:code($node as node(), $model as map(*)) {
+    attribute { 'data-language' } { $node/@language/string() },
+    $node/string()
+};
